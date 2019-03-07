@@ -28,7 +28,7 @@ class EloquentBuilder
      *
      * @return Builder
      */
-    public function to($query, array $filters = null): Builder
+    public function to($query, array $filters = null): ?Builder
     {
         if (is_string($query)) {
             $query = ($query)::query();

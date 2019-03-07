@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Builder;
 
 interface IFilter
 {
-    public function apply(Builder $builder, $value): Builder;
+    public function apply(Builder $builder, $value): ?Builder;
 }
